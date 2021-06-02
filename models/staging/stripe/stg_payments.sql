@@ -6,7 +6,7 @@ with stg_payments as (
         status as status, 
         amount / 100 as amount,
         created as created_at
-    from AAGGARWAL_DB.STRIPE.PAYMENT
+    from {{source('stripe','payment')}}
 
 )
 

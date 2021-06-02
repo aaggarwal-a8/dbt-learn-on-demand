@@ -1,0 +1,9 @@
+version: 2
+
+sources: 
+  - name: stripe
+    description: copy of a Postgres application database
+    database: aaggarwal_db
+    tables:
+      - name: payment
+        description: db payments data
